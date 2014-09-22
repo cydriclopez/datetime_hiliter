@@ -1,0 +1,62 @@
+body { font-size: 65%; }
+table {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+td, menubox { vertical-align: top; text-align: left; }
+.CGray { background-color: #BFBFBF; }
+.monthgrid { display: block; white-space: nowrap; }
+
+#dialog label, #dialog input { display:block; }
+#dialog label { margin-top: 0.5em; }
+#dialog input, #dialog textarea { width: 95%; }
+
+#tabs { margin-top: 1em; }
+#tabs li .ui-icon-close { float: left; margin: 0.4em 0.2em 0 0; cursor: pointer; }
+
+#add_tab { cursor: pointer; }
+
+.ui-tabs { position: relative; padding: .0em; zoom: 1; }
+.ui-tabs .ui-tabs-panel { display: block; border-width: 0; padding: 1em 0.6em; background: none; }
+.ui-tabs .ui-tabs-nav li a { float: left; padding: .5em .5em; text-decoration: none; }
+
+#hilite { position: absolute; display: inline; background-color: cyan; }
+#hilite, .monthgrid { font-family: monospace; font-size: 11px; }
+#tooltip {
+  font-size: 14px;
+  position: absolute;
+  z-index: 300;
+  border: 1px solid #111;
+  background-color: #eee;
+  padding: 5px;
+  opacity: 0.85; margin: 0;
+}
+.top-banner { border: 0px; background-color: #99CCFF; }
+.menu-table { border: 0px; background-color: #2B6A99; white-space: nowrap; }
+.monthgrid { display: none; font-family: monospace; font-size: 12px; white-space: nowrap; }
+.visible { display: block; }
+
+.info{
+  margin: 0px;
+  height: 25px;
+  white-space: normal;
+  position:relative;
+  z-index:24; background-color:#ccc;
+  color:#000;
+  text-decoration:none}
+
+.info:hover{z-index:2500; background-color:#ff0}
+
+.info span{display: none}
+
+.info:hover span{
+  display:block;
+  position:absolute;
+  top:2em; left:2em; width:15em;
+  border:1px solid #0cf;
+  background-color:#cff; color:#000;
+  text-align: center
+}

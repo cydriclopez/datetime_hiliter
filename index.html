@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+/*
+ * Developed primarily in Chrome because of built-in
+ * debug features. Also tested in Firefox. Sorry code
+ * not tested in IE I have no windows pc.
+ *
+ */
+-->
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<meta name="generator" content="Geany 1.24.1" />
+<title>Cydric Lopez (Gijool-demo)</title>
+<link rel="stylesheet" href="static/jq/css/redmond/jquery-ui-1.8.14.custom.css"></link>
+<script src="static/jq/jquery-1.6.2.min.js" type="text/javascript"></script>
+<script src="static/jq/jquery-ui-1.8.14.custom.min.js" type="text/javascript"></script>
+<link rel="stylesheet" href="static/gijool.css"></link>
+<!--*************************************************************-->
+<script src="static/gijool.js" type="text/javascript"></script>
+<!--*************************************************************-->
+</head>
+<body>
+<div>
+<div class="top-banner">
+<img src="static/gijool-logo-1.png" alt="Gijool.com Logo"  width="410" height="80" />
+</div>
+<div class="menu-table menubox">&nbsp;
+<button id="help_info" class="info">?<span>Gijool (geh-dyool) - Helping you give the time of day! (origin: Naive silly play on the word "schedule.") Datetime entry is usually tedious. This is just a simple demo on datetime entry that mimics hiliter pen marking a calendar grid. Choose month to display. Choose a Pentype, then left-click and drag mouse over the grid to hilite datetime entry. Click on "Show JSON". Click on "Clear Grid". Click on "Repaint JSON". Action Menu not yet implemented. This will involve server-side action in Django. *** GUI still rough needs overhaul but this is just demo. ***</span></button>&nbsp;
+<button id="add_tab" class="info">+<span>Add email tab to see that other user's free time availability. This application is a way for users to publish just their free time. From this information other users can reserve time for appointment. No need for phone-tag to happen. This application can also be used by businesses to publish their available times. I have yet to figure out fully where to take this idea.</span></button>&nbsp;
+<button id="prevMonthButton" class="info">&lt;<span>Show previous month-grid</span></button>
+<select name="months_select" id="months_select" class="info">
+  <option value="Sep-01-2014">Sep</option>
+  <option value="Oct-01-2014">Oct</option>
+  <option value="Nov-01-2014">Nov</option>
+  <option value="Dec-01-2014">Dec</option>
+  <option value="Jan-01-2015">Jan</option>
+  <option value="Feb-01-2015">Feb</option>
+</select>
+<button id="nextMonthButton" class="info">&gt;<span>Show next month-grid</span></button>
+&nbsp;
+  <select id="penType" class="info">
+    <option value="0" style="background-color: #F6F6F5">Pentype (shift)</option>
+    <option value="1" style="background-color: LightCoral">Appointment</option>
+    <option value="2" style="background-color: green">Confirm</option>
+    <option value="3" style="background-color: white">Erase</option>
+    <option value="4" style="background-color: orange">Freetime</option>
+    <option value="5" style="background-color: LightGray">Wizard</option>
+  </select>
+<button id="penTypeColorButton" class="info">&nabla;<span>This button shows the current hiliter pen color. Choose from Pentype menu or press Shift key several times to toggle between different pen types. Then left-click and drag mouse over the grid to hilite datetime entry.</span></button>
+&nbsp;
+  <select id="datesAction" class="info">
+    <option value="0">-- Menu --</option>
+    <option value="1">Save</option>
+    <option value="2">Refresh</option>
+    <option value="3">Erase</option>
+    <option value="4">Configure</option>
+  </select>
+&nbsp;
+&nbsp;
+&nbsp;Test Buttons:&nbsp;
+<button id="showJson" class="info">Show JSON<span>Click this button to display JSON data.</span></button>
+<button id="clearGrid" class="info">Clear Grid<span>Click this button to clear month-grid.</span></button>
+<button id="repaintGrid" class="info">Repaint JSON<span>Click this button to re-display JSON data.</span></button>
+</div>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td>
+<!-- ******* Start: Javascript code "month-grid" work area. ******* -->
+<!-- This area is where event $('#months_select').change() operates mostly. -->
+<div id="tabs">
+  <ul>
+    <li><a href="#my-freetime">My Freetime</a></li>
+  </ul>
+  <span id="tooltip"></span>
+  <div id="my-freetime"></div>
+</div>
+<!-- ******* End: Javascript code "month-grid" work area. ******* -->
+</div>
+</td>
+<td><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ad Space</h3></td>
+</tr>
+</table>
+<div id="dialog" title="Tab data">
+<form>
+<fieldset class="ui-helper-reset">
+  <label for="tab_title">Please enter proper Email address:</label>
+  <input type="text" name="tab_title" id="tab_title" value="" class="ui-widget-content ui-corner-all" />
+  <label>Blank email entry gives demo email address "pal_@gmail.com" where "_" is integer.</label>
+</fieldset>
+</form>
+</div>
+<span id="colorScratchPad" class="monthgrid"></span>
+</body>
+</html>
