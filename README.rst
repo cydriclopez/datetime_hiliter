@@ -14,11 +14,12 @@ demo/proof-of-concept prototype.
 
 Here is a screen shot:
 
-.. image:: static/screenshot.png
+.. image:: /static/screenshot.png
 
 Demo
 ----
 `Live demo <http://hiliter.cydric.webfactional.com/index.html>`_
+
 `Info slideshow <http://timebooktoo.cydric.webfactional.com/>`_
 
 Features
@@ -47,16 +48,17 @@ in IE. I have no windows pc.
 
 How it works
 ------------
-Click on this `live demo link <http://hiliter.cydric.webfactional.com/index.html>`_.
+Right-click on this `live demo link <http://hiliter.cydric.webfactional.com/index.html>`_ then
+click on "Open link in new tab". You can then switch to that tab.
 
 Then follow the following steps:
   * Choose the month to display.
   * Choose a Pentype or press Shift to
     cycle thru various pens:
-    - Pink (appointment)
-    - Green (confirm)
-    - White (erase)
-    - Orange (freetime)
+      - Pink (appointment)
+      - Green (confirm)
+      - White (erase)
+      - Orange (freetime)
   * Left-click and drag mouse over the grid to
     hilite datetime entry.
   * Click on "Show JSON".
