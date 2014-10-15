@@ -41,6 +41,17 @@ This simple project is specific in purpose. It features the following:
 The center of the action happens in file static/gijool.js **lines 540-549**.
 OOP pattern makes the action of creating/searching/showing/hiding each month
 grid relatively simple.
+::
+  $('#months_select').change(function(){
+      monthGridKey = [tab_panel_id, $("#months_select").val()];
+      monthGrid = monthGridCollection.get(monthGridKey);  // Grab grid from collection
+      if(!monthGrid){
+          monthGrid = new MonthGrid(monthGridKey);  // Create new grid if non-existing
+          monthGrid.createMonthTable();
+          monthGridCollection.add(monthGrid);       // Add to grid collection
+      }
+      monthGridCollection.show(monthGrid);    // Show current grid & hide the rest
+  });
 
 This demo was developed primarily using Chrome because of its built-in
 debug features. Also tested in Firefox/Firebug. Sorry code not tested
