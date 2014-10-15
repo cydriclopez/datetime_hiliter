@@ -9,6 +9,18 @@ This project was going to provide a way for users to publish their
 free time availability. It was a way for users to set appointment
 to meet each other without resorting to phone tag.
 
+The GUI is rough and needs overhaul but this is just a 
+demo/proof-of-concept prototype.
+
+Here is a screen shot:
+
+.. image:: static/screenshot.png
+
+Demo
+----
+`Live demo <http://hiliter.cydric.webfactional.com/index.html>`_
+`Info slideshow <http://timebooktoo.cydric.webfactional.com/>`_
+
 Features
 --------
 This simple project is specific in purpose. It features the following:
@@ -35,17 +47,16 @@ in IE. I have no windows pc.
 
 How it works
 ------------
-Download the file index.html and its companion static folder and
-its contents. Open index.html with a browser.
+Click on this `live demo link <http://hiliter.cydric.webfactional.com/index.html>`_.
 
 Then follow the following steps:
   * Choose the month to display.
   * Choose a Pentype or press Shift to
     cycle thru various pens:
-      - Pink (appointment)
-      - Green (confirm)
-      - White (erase)
-      - Orange (freetime)
+    - Pink (appointment)
+    - Green (confirm)
+    - White (erase)
+    - Orange (freetime)
   * Left-click and drag mouse over the grid to
     hilite datetime entry.
   * Click on "Show JSON".
