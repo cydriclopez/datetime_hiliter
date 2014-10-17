@@ -539,13 +539,13 @@ $(function(){
   // OOP code pattern makes it simple.
   $('#months_select').change(function(){
     monthGridKey = [tab_panel_id, $("#months_select").val()];
-    monthGrid = monthGridCollection.get(monthGridKey);
+    monthGrid = monthGridCollection.get(monthGridKey);  // Grab grid from collection
     if(!monthGrid){
-      monthGrid = new MonthGrid(monthGridKey);
+      monthGrid = new MonthGrid(monthGridKey);  // Create new grid if non-existing
       monthGrid.createMonthTable();
-      monthGridCollection.add(monthGrid);
+      monthGridCollection.add(monthGrid);       // Add to grid collection
     }
-    monthGridCollection.show(monthGrid);
+    monthGridCollection.show(monthGrid);    // Show current grid & hide the rest
   });
   //**********************************************************************
   $('#prevMonthButton').click(function(){
