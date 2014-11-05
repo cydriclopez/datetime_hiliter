@@ -54,8 +54,8 @@ grid relatively simple.
     });
 
 This demo was developed primarily using Chrome because of its built-in
-debug features. Also tested in Firefox/Firebug. Sorry code not tested
-in IE. I have no windows pc.
+debug features. Also tested in Firefox/Firebug. Code not tested
+in IE.
 
 How it works
 ------------
