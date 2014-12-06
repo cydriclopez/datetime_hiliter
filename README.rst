@@ -38,7 +38,7 @@ This simple project is specific in purpose. It features the following:
   * Object-oriented javascript code using jquery to abstract
     browser variance.
 
-The center of the action happens in file `static/gijool.js <https://github.com/cydriclopez/datetime_hiliter/blob/master/static/gijool.js>`_ **lines 540-549**.
+The center of the action happens in file `static/gijool.js <https://github.com/cydriclopez/datetime_hiliter/blob/master/static/gijool.js#L540>`_ **lines 540-549**.
 OOP pattern makes the action of creating/searching/showing/hiding each month
 grid relatively simple.
 ::
