@@ -33,8 +33,9 @@ This simple project is specific in purpose. It features the following:
   * Multiple tabs to check on other users' free time availability
     and request appointment.
   * Time-tooltip popup to aid time selection.
-  * Finite-state logic for fast error-correction and json
-    encode/decode.
+  * Finite-state logic for fast `error-correction <https://github.com/cydriclopez/datetime_hiliter/blob/master/static/gijool.js#L282>`_
+    and json `encode <https://github.com/cydriclopez/datetime_hiliter/blob/master/static/gijool.js#L322>`_/
+    `decode <https://github.com/cydriclopez/datetime_hiliter/blob/master/static/gijool.js#L414>`_.
   * Object-oriented javascript code using jquery to abstract
     browser variance.
 
